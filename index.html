@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcular área</title>
+  </head>
+  <body>
+    <main id="app">
+      <div class="container">
+        <h1>
+          Conoce el área de la figura geometrica
+
+          <div class="absolutebarremark"></div>
+        </h1>
+        <form id="form" class="form">
+          <div id="result" class="result" style="display: none"></div>
+          <label for="figure">Elige la figura</label>
+          <select id="figure">
+            <option value="circle">Círculo</option>
+            <option value="square">Cuadrado</option>
+            <option value="triangle">Triángulo</option>
+          </select>
+          <div class="separator"></div>
+          <label for="radius">Radio</label>
+          <input type="number" id="radius" placeholder="Radio" />
+          <label for="side">Lado</label>
+          <input type="number" id="side" placeholder="Lado" />
+          <label for="base">Base</label>
+          <input type="number" id="base" placeholder="Base" />
+          <label for="height">Altura</label>
+          <input type="number" id="height" placeholder="Altura" />
+          <button type="submit" id="calculate">Calcular</button>
+        </form>
+      </div>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
